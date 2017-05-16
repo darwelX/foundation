@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+    <!-- la clase expanded permite ocupar todo el ancho de la fila ya que sin el los elementos de la fila quedaran centrados -->
+    <!-- tanto fundation como bootstrap estan hechos para ser movile first se programa los estilos  primero para dispositivos moviles -->
+    <!-- por defecto la clase row deja un margen de izquierda a derecha si queremos que este margen no este presente se utiliza la clase tamaño-collapse siendo tamaño = small medium large -->
+    <div class="row small-collapse large-uncollapse">
+      <!-- si queremos centrar una columna utilizamos la clase tamaño-centered, si queremos que una columna para otro tamaño su contenido no se centre se utiliza la clase tamaño-uncentered -->
+      <div class="column small-12 medium-4">
+        hola
+      </div>
+      <!-- la clase end permite correr un espacio pegado a la columna mas proxima, esto es porque al no completarse las 12 posiciones dispuestas en una fila debido a una caracteristica de compatibilidad entre navegadores ya que fundation coloca la ultima columna pegada al final -->
+      <!-- la clase medium-offset-1 correr una columna un espacio hacia la derecha -->
+      
+      <div class="column small-12 medium-4">
+        mundo
+      </div> 
+    
+    </div>   
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
