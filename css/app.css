@@ -84,3 +84,19 @@ h1, h2, h3, h4, h5, h6, button {
     display: inline-block;
     float: none;
 }
+
+
+/* se alinean los textos del de las imagenes a la derecha solo para los elementos impares */
+#lineup-container .column:nth-child(odd) .card-divider{
+    text-align: right
+}
+
+.card {
+    border:0 !important;
+}
+
+#lineup-container .column .card .card-divider {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
