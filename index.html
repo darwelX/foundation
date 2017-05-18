@@ -51,6 +51,39 @@
     </section>
     <!-- /Menu-->
 
+    <!-- Tickets -->
+    <!-- Call to Action: es un botón o enlace situado en nuestro site que busca atraer clientes potenciales y convertirles en clientes finales, normalmente a través de un formulario en una página de destino o landing page. -->
+    <section id="tickets-action">
+      <!-- la clase large le añade padding al contenido de la etiqueta que lo usa -->
+      <div class="callout large text-center">
+        <button class="button large hollow">Comprar Boletos</button>
+      </div>
+    </section>
+    <!-- /Tickets-->
+
+    <!-- Lineup -->
+    <section id="lineup-container">
+      <h3 class="text-center">Lineup</h3>
+      <!-- el orden del atributo data-tabs es importante sino no funcionaria a pesar de estar presente en la etiqueta -->
+      <ul class="tabs text-center" data-tabs id="lineup-tabs">
+        <li class="tabs-title is-active">
+          <a href="#panel-viernes">Viernes</a>
+        </li>
+        <li class="tabs-title">
+          <a href="#panel-sabado">Sábado</a>
+        </li>
+        <li class="tabs-title">
+          <a href="#panel-domingo">Domingo</a>
+        </li>
+      </ul>
+
+      <div class="tabs-content" data-tabs-content="lineup-tabs">
+        <div class="tabs-panel is-active" id="panel-viernes">Contenido del Viernes</div>
+        <div class="tabs-panel" id="panel-sabado">Contenido del Sábado</div>
+        <div class="tabs-panel" id="panel-domingo">Contenido del Domingo</div>
+      </div>
+    </section>
+    <!-- /Lineup -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
