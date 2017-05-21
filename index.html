@@ -36,19 +36,21 @@
       <!-- la clase dropdown es para aplicar estilos de menu desplegable -->
       <!-- el atributo data-dropdown-menu se utiliza para darle funcionalidad javascript al menu por parte de foundation -->
       <!-- las clases de alineacion (align-spaced) vista en las practicas de rejillas tambien pueden ser aplicadas a otros elementos -->
-      <ul class="menu dropdown align-spaced" data-dropdown-menu>
-        <li><a href="#">Tickets</a></li>
-        <li>
-          <a href="#">Lineup</a>
-          <ul id="menu-subcontainer" class="menu">
-            <li><a href="#">Viernes</a></li>
-            <li><a href="#">Sábado</a></li>
-            <li><a href="#">Domingo</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Info</a></li>
-        <li><a href="#">Suscribete</a></li>
-      </ul>
+      <nav data-magellan><!-- el atributo data-magellan sirve para hacer una navegacion suave atraves de la pagina y se conbina con el uso de data-magellan-target en las secciones donde queremos navegar-->
+        <ul class="menu dropdown align-spaced" data-dropdown-menu>
+          <li><a href="#pricing-container">Tickets</a></li>
+          <li>
+            <a href="#lineup-container">Lineup</a>
+            <ul id="menu-subcontainer" class="menu">
+              <li><a href="#">Viernes</a></li>
+              <li><a href="#">Sábado</a></li>
+              <li><a href="#">Domingo</a></li>
+            </ul>
+          </li>
+          <li><a href="#info-container">Info</a></li>
+          <li><a href="#suscribete-container">Suscribete</a></li>
+        </ul>
+      </nav>
     </section>
     <!-- /Menu-->
 
@@ -63,7 +65,7 @@
     <!-- /Tickets-->
 
     <!-- Lineup -->
-    <section id="lineup-container">
+    <section id="lineup-container" data-magellan-target="lineup-container">
       <h3 class="text-center">Lineup</h3>
       <!-- el orden del atributo data-tabs es importante sino no funcionaria a pesar de estar presente en la etiqueta -->
       <ul class="tabs text-center" data-tabs id="lineup-tabs">
@@ -191,7 +193,7 @@
     <!-- /Lineup -->
 
     <!-- Pricing Table -->
-    <section id="pricing-container">
+    <section id="pricing-container" data-magellan-target="pricing-container">
       <h3 class="text-center">Comprar Boletos</h3>
 
       <div class="row">
@@ -242,7 +244,7 @@
     <!-- /Pricing Table> -->
 
     <!-- Suscribete -->
-    <section id="suscribete-container">
+    <section id="suscribete-container" data-magellan-target="suscribete-container">
       <h3 class="text-center">Suscríbete</h3>
       <h4 class="text-center"><small>Y recive las últimas novedades del concierto</small></h4>
       <!-- el atributo data-abide es parte de un plugin de foundation para validar y mostrar errores de un formulario llamado bide -->
@@ -267,7 +269,7 @@
     <!-- /Suscribete -->
 
     <!-- Info -->
-    <section id="info-container">
+    <section id="info-container" data-magellan-target="info-container">
       <h3 class="text-center">Información</h3>
       <div class="info-map" data-interchange="[assets/map.small.html, small], [assets/map.html, medium]"></div>
     </section>
