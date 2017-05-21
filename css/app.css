@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
 
 
 /* se alinean los textos del de las imagenes a la derecha solo para los elementos impares */
-#lineup-container .column:nth-child(odd) .card-divider{
+#lineup-container .columns:nth-child(odd) .card-divider{
     text-align: right
 }
 
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
     border:0 !important;
 }
 
-#lineup-container .column .card .card-divider {
+#lineup-container .columns .card .card-divider {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
@@ -154,4 +154,9 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
 
 #suscribete-container .error-container {
     font-family: "Bree Serif", serif;
+}
+
+.data-sticky{
+    width: 100%;
+    z-index: 100;
 }
