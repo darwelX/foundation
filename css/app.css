@@ -2,7 +2,7 @@ body {
     background-color: #ee3f54;
 }
 
-h1, h2, h3, h4, h5, h6, button {
+h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
     font-family: "Bree Serif", serif;
 }
 #social-container {
@@ -44,10 +44,12 @@ h1, h2, h3, h4, h5, h6, button {
     color: white;
     margin-bottom: 0;
 }
-#tickets-action .callout button {
+#tickets-action .callout a {
     color: white;
     border: solid 1px white;
+    font-family: "Bree Serif", serif;
 }
+
 
 #lineup-container {
     padding: 1em 0;
@@ -138,4 +140,14 @@ h1, h2, h3, h4, h5, h6, button {
 
 #info-container .info-map iframe {
     width: 100%;
+}
+
+#suscribete-container {
+    background-color: #ee3f54;
+    padding: 1em 0;
+    color: white;
+}
+
+#suscribete-container h4 small {
+    color: #ffcdcc;
 }
