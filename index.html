@@ -12,279 +12,309 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <!-- Social -->
-    <section id="social-container">
-      <div class="row align-center text-center">
-        <div class="columns small-1"><a href="#" target="_blank"><i class="fi-social-facebook"></i></a></div>
-        <div class="columns small-1"><a href="#" target="_blank"><i class="fi-social-twitter"></i></a></div>
-        <div class="columns small-1"><a href="#" target="_blank"><i class="fi-social-instagram"></i></a></div>
-      </div>
-    </section>
-    <!-- /Social -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+          <nav data-magellan>
+            <ul class="menu vertical">
+              <li><a href="#pricing-container">Tickets</a></li>
+              <li>
+                <a href="#lineup-container">Lineup</a>
+                <!--<ul id="menu-subcontainer" class="menu">
+                  <li><a data-toggle-dia="panel-viernes"href="#lineup-container">Viernes</a></li>
+                  <li><a data-toggle-dia="panel-sabado"href="#lineup-container">Sábado</a></li>
+                  <li><a data-toggle-dia="panel-domingo"href="#lineup-container">Domingo</a></li>
+                </ul>-->
+              </li>
+              <li><a href="#info-container">Info</a></li>
+              <li><a href="#suscribete-container">Suscribete</a></li>              
+            </ul>
+          </nav>
+        </div>
 
-    <!-- Logo-->
-    <section id="logo-container">
-      <!-- callout una clase especial de foundation que combina celdas -->
-      <div class="callout text-center">
-        <h1>Platzipalooza</h1>
-      </div>
-    </section>
-    <!-- /Logo -->
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- Social -->
+          <section id="social-container">
+            <div class="row align-center text-center">
+              <div class="columns small-1"><a href="#" target="_blank"><i class="fi-social-facebook"></i></a></div>
+              <div class="columns small-1"><a href="#" target="_blank"><i class="fi-social-twitter"></i></a></div>
+              <div class="columns small-1"><a href="#" target="_blank"><i class="fi-social-instagram"></i></a></div>
+            </div>
+          </section>
+          <!-- /Social -->
 
-    <!-- Menu-->
-    <section id="scrollSticky" data-sticky-container>
-      <!-- la clase dropdown es para aplicar estilos de menu desplegable -->
-      <!-- el atributo data-dropdown-menu se utiliza para darle funcionalidad javascript al menu por parte de foundation -->
-      <!-- las clases de alineacion (align-spaced) vista en las practicas de rejillas tambien pueden ser aplicadas a otros elementos -->
-      <!-- Los atributos data-sticky data-options data-sticky-on data-top-anchor
-      son necesarios para hacer uso de una barra que se deplace atraves de la pagina al navegar
-      data-sticky-on: a partir de que tamaño se activa
-      data-top-anchor: la seccion ancla de la barra al pasarse de esa seccion se desplasa la barra
-      -->
-      <div class="data-sticky" data-sticky data-options="marginTop: 0" data-sticky-on="small" data-top-anchor="scrollSticky">
-        <!-- 
-          al usar magellan los enlaces deben contener un href bien sea un ancla o enlace
-          ya que sino lo tiene puede provocar un error
-          -->
-        <nav id="menu-container" data-magellan><!-- el atributo data-magellan sirve para hacer una navegacion suave atraves de la pagina y se conbina con el uso de data-magellan-target en las secciones donde queremos navegar-->
-          <ul class="menu dropdown align-spaced" data-dropdown-menu>
-            <li><a href="#pricing-container">Tickets</a></li>
-            <li>
-              <a href="#lineup-container">Lineup</a>
-              <ul id="menu-subcontainer" class="menu">
-                <li><a data-toggle-dia="panel-viernes"href="#lineup-container">Viernes</a></li>
-                <li><a data-toggle-dia="panel-sabado"href="#lineup-container">Sábado</a></li>
-                <li><a data-toggle-dia="panel-domingo"href="#lineup-container">Domingo</a></li>
-              </ul>
-            </li>
-            <li><a href="#info-container">Info</a></li>
-            <li><a href="#suscribete-container">Suscribete</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- /Menu-->
+          <!-- Logo-->
+          <section id="logo-container">
+            <!-- callout una clase especial de foundation que combina celdas -->
+            <div class="callout text-center">
+              <h1>Platzipalooza</h1>
+            </div>
+          </section>
+          <!-- /Logo -->
 
-    <!-- Tickets -->
-    <!-- Call to Action: es un botón o enlace situado en nuestro site que busca atraer clientes potenciales y convertirles en clientes finales, normalmente a través de un formulario en una página de destino o landing page. -->
-    <section id="tickets-action">
-      <!-- la clase large le añade padding al contenido de la etiqueta que lo usa -->
-      <div class="callout large text-center">
-        <a class="button large hollow" href="#pricing-container">Comprar Boletos</a>
-      </div>
-    </section>
-    <!-- /Tickets-->
+          <!-- Menu-->
+          <section id="scrollSticky" data-sticky-container>
+            <!-- la clase dropdown es para aplicar estilos de menu desplegable -->
+            <!-- el atributo data-dropdown-menu se utiliza para darle funcionalidad javascript al menu por parte de foundation -->
+            <!-- las clases de alineacion (align-spaced) vista en las practicas de rejillas tambien pueden ser aplicadas a otros elementos -->
+            <!-- Los atributos data-sticky data-options data-sticky-on data-top-anchor
+            son necesarios para hacer uso de una barra que se deplace atraves de la pagina al navegar
+            data-sticky-on: a partir de que tamaño se activa
+            data-top-anchor: la seccion ancla de la barra al pasarse de esa seccion se desplasa la barra
+            -->
+            <div class="data-sticky" data-sticky data-options="marginTop: 0" data-sticky-on="small" data-top-anchor="scrollSticky">
+              <!-- 
+                al usar magellan los enlaces deben contener un href bien sea un ancla o enlace
+                ya que sino lo tiene puede provocar un error
+                -->
+              <nav id="menu-container" data-magellan><!-- el atributo data-magellan sirve para hacer una navegacion suave atraves de la pagina y se conbina con el uso de data-magellan-target en las secciones donde queremos navegar-->
+                <ul class="menu align-spaced show-for-small-only">
+                  <li>
+                    <a href="#" data-toggle="offCanvas">Menu</a>
+                  </li>
+                </ul>
+                <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
+                  <li><a href="#pricing-container">Tickets</a></li>
+                  <li>
+                    <a href="#lineup-container">Lineup</a>
+                    <ul id="menu-subcontainer" class="menu">
+                      <li><a data-toggle-dia="panel-viernes"href="#lineup-container">Viernes</a></li>
+                      <li><a data-toggle-dia="panel-sabado"href="#lineup-container">Sábado</a></li>
+                      <li><a data-toggle-dia="panel-domingo"href="#lineup-container">Domingo</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#info-container">Info</a></li>
+                  <li><a href="#suscribete-container">Suscribete</a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+          <!-- /Menu-->
 
-    <!-- Lineup -->
-    <section id="lineup-container" data-magellan-target="lineup-container">
-      <h3 class="text-center">Lineup</h3>
-      <!-- el orden del atributo data-tabs es importante sino no funcionaria a pesar de estar presente en la etiqueta -->
-      <ul class="tabs text-center" data-tabs id="lineup-tabs">
-        <li class="tabs-title is-active">
-          <a href="#panel-viernes">Viernes</a>
-        </li>
-        <li class="tabs-title">
-          <a href="#panel-sabado">Sábado</a>
-        </li>
-        <li class="tabs-title">
-          <a href="#panel-domingo">Domingo</a>
-        </li>
-      </ul>
+          <!-- Tickets -->
+          <!-- Call to Action: es un botón o enlace situado en nuestro site que busca atraer clientes potenciales y convertirles en clientes finales, normalmente a través de un formulario en una página de destino o landing page. -->
+          <section id="tickets-action">
+            <!-- la clase large le añade padding al contenido de la etiqueta que lo usa -->
+            <div class="callout large text-center">
+              <a class="button large hollow" href="#pricing-container">Comprar Boletos</a>
+            </div>
+          </section>
+          <!-- /Tickets-->
 
-      <div class="tabs-content" data-tabs-content="lineup-tabs">
+          <!-- Lineup -->
+          <section id="lineup-container" data-magellan-target="lineup-container">
+            <h3 class="text-center">Lineup</h3>
+            <!-- el orden del atributo data-tabs es importante sino no funcionaria a pesar de estar presente en la etiqueta -->
+            <ul class="tabs text-center" data-tabs id="lineup-tabs">
+              <li class="tabs-title is-active">
+                <a href="#panel-viernes">Viernes</a>
+              </li>
+              <li class="tabs-title">
+                <a href="#panel-sabado">Sábado</a>
+              </li>
+              <li class="tabs-title">
+                <a href="#panel-domingo">Domingo</a>
+              </li>
+            </ul>
 
-        <div class="tabs-panel is-active" id="panel-viernes">
-          
-          <div class="row">
+            <div class="tabs-content" data-tabs-content="lineup-tabs">
 
-              <div class="small-12 medium-6 columns">
-                <div class="card">
-                  <img src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                  <div class="card-divider">Guns n' Roses</div>
+              <div class="tabs-panel is-active" id="panel-viernes">
+                
+                <div class="row">
+
+                    <div class="small-12 medium-6 columns">
+                      <div class="card">
+                        <img src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
+                        <div class="card-divider">Guns n' Roses</div>
+                      </div>
+                    </div>
+
+                    <div class="small-12 medium-6 columns">
+                      <div class="card">
+                        <img src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
+                        <div class="card-divider">Guns n' Roses</div>
+                      </div>
+                    </div>
+
+                    <div class="small-12 medium-6 columns">
+                      <div class="card">
+                        <img src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
+                        <div class="card-divider">Guns n' Roses</div>
+                      </div>
+                    </div>
+
+                    <div class="small-12 medium-6 columns">
+                      <div class="card">
+                        <img src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
+                        <div class="card-divider">Guns n' Roses</div>
+                      </div>
+                    </div>
+
+                </div>
+                  
+              </div>
+
+              <div class="tabs-panel" id="panel-sabado">
+
+                <div class="row">
+
+                  <div class="small-12 medium-6 columns">
+                    <div class="card">
+                      <img src="http://lallamarada.net/wp-content/uploads/2016/06/beatles.jpg" alt="Beatles">
+                      <div class="card-divider">Beatles</div>
+                    </div>
+                  </div>
+
+                  <div class="small-12 medium-6 columns">
+                    <div class="card">
+                      <img src="http://lallamarada.net/wp-content/uploads/2016/06/beatles.jpg" alt="Beatles">
+                      <div class="card-divider">Beatles</div>
+                    </div>
+                  </div>
+
+                  <div class="small-12 medium-6 columns">
+                    <div class="card">
+                      <img src="http://lallamarada.net/wp-content/uploads/2016/06/beatles.jpg" alt="Beatles">
+                      <div class="card-divider">Beatles</div>
+                    </div>
+                  </div>
+
+                  <div class="small-12 medium-6 columns">
+                    <div class="card">
+                      <img src="http://lallamarada.net/wp-content/uploads/2016/06/beatles.jpg" alt="Beatles">
+                      <div class="card-divider">Beatles</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tabs-panel" id="panel-domingo">
+
+                <div class="row">
+
+                  <div class="small-12 medium-6 columns">
+                    <div class="card">
+                      <img src="https://bulk2.destructoid.com/ul/150736-queen.jpg" alt="Queen">
+                      <div class="card-divider">Queen</div>
+                    </div>
+                  </div>
+
+                  <div class="small-12 medium-6 columns">
+                    <div class="card">
+                      <img src="https://bulk2.destructoid.com/ul/150736-queen.jpg" alt="Queen">
+                      <div class="card-divider">Queen</div>
+                    </div>
+                  </div>
+
+                  <div class="small-12 medium-6 columns">
+                    <div class="card">
+                      <img src="https://bulk2.destructoid.com/ul/150736-queen.jpg" alt="Queen">
+                      <div class="card-divider">Queen</div>
+                    </div>
+                  </div>
+
+                  <div class="small-12 medium-6 columns">
+                    <div class="card">
+                      <img src="https://bulk2.destructoid.com/ul/150736-queen.jpg" alt="Queen">
+                      <div class="card-divider">Queen</div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
+            </div>
+          </section>
+          <!-- /Lineup -->
 
-              <div class="small-12 medium-6 columns">
-                <div class="card">
-                  <img src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                  <div class="card-divider">Guns n' Roses</div>
+          <!-- Pricing Table -->
+          <section id="pricing-container" data-magellan-target="pricing-container">
+            <h3 class="text-center">Comprar Boletos</h3>
+
+            <div class="row">
+
+              <div class="small-6 small-offset-3 columns">
+                <ul class="pricing-table">
+                  <li class="title">Platino</li>
+                  <li class="price">$120</li>
+                  <li class="description">Acceso viernes, sábado y domingo</li>
+                  <li>2 bebidas por cada día</li>
+                  <li>Parqueadero incluido todos los días</li>
+                  <li>Participa de un sorteo para acceder al backstage</li>
+                  <li><a class="button" href="#">Comprar platino</a></li>
+                </ul>          
+              </div>
+
+            </div>
+
+            <div class="row" data-equalizer data-equalize-on="small">
+
+              <div class="small-5 small-offset-1 columns">
+                <ul class="pricing-table">
+                  <li class="title">Gold</li>
+                  <li class="price">$90</li>
+                  <li class="description">Acceso viernes, sábado y domingo</li>
+                  <li data-equalizer-watch>Podras comprar una bebida para cada día</li>
+                  <li>-</li>
+                  <li>-</li>
+                  <li><a class="button" href="#">Comprar Gold</a></li>
+                </ul>
+              </div>
+
+              <div class="small-5 columns">
+                <ul class="pricing-table">
+                  <li class="title">Silver</li>
+                  <li class="price">$65</li>
+                  <li class="description">Acceso viernes, sábado y domingo</li>
+                  <li data-equalizer-watch >-</li>
+                  <li>-</li>
+                  <li>-</li>
+                  <li><a class="button" href="#">Comprar Silver</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+          </section>
+          <!-- /Pricing Table> -->
+
+          <!-- Suscribete -->
+          <section id="suscribete-container" data-magellan-target="suscribete-container">
+            <h3 class="text-center">Suscríbete</h3>
+            <h4 class="text-center"><small>Y recive las últimas novedades del concierto</small></h4>
+            <!-- el atributo data-abide es parte de un plugin de foundation para validar y mostrar errores de un formulario llamado bide -->
+            <form action="" method="" novalidate data-abide>
+              <!-- al utilizar el atributo data-abide-error le dice a foundation que el elemento se debe de mostrar al aocurrir un error de validacion -->
+              <div data-abide-error  style="display: none;" class="row columns small-12 medium-6 text-center error-container">
+                <p>
+                  <i class="fi-alert"></i>Ingresó un correo electrónico no valido
+                </p>
+              </div>
+              <div class="row columns small-12 medium-6">
+                <div class="input-group">
+                  <span class="input-group-label"><i class="fi-mail"></i></span>
+                  <input type="email" name="email" required placeholder="to@correo.com" class="input-group-field">
+                  <div class="input-group-button">
+                    <input type="submit" value="Suscríbete" class="button">
+                  </div>
                 </div>
               </div>
+            </form>
+          </section>
+          <!-- /Suscribete -->
 
-              <div class="small-12 medium-6 columns">
-                <div class="card">
-                  <img src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                  <div class="card-divider">Guns n' Roses</div>
-                </div>
-              </div>
-
-              <div class="small-12 medium-6 columns">
-                <div class="card">
-                  <img src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                  <div class="card-divider">Guns n' Roses</div>
-                </div>
-              </div>
-
-          </div>
-            
-        </div>
-
-        <div class="tabs-panel" id="panel-sabado">
-
-          <div class="row">
-
-            <div class="small-12 medium-6 columns">
-              <div class="card">
-                <img src="http://lallamarada.net/wp-content/uploads/2016/06/beatles.jpg" alt="Beatles">
-                <div class="card-divider">Beatles</div>
-              </div>
-            </div>
-
-            <div class="small-12 medium-6 columns">
-              <div class="card">
-                <img src="http://lallamarada.net/wp-content/uploads/2016/06/beatles.jpg" alt="Beatles">
-                <div class="card-divider">Beatles</div>
-              </div>
-            </div>
-
-            <div class="small-12 medium-6 columns">
-              <div class="card">
-                <img src="http://lallamarada.net/wp-content/uploads/2016/06/beatles.jpg" alt="Beatles">
-                <div class="card-divider">Beatles</div>
-              </div>
-            </div>
-
-            <div class="small-12 medium-6 columns">
-              <div class="card">
-                <img src="http://lallamarada.net/wp-content/uploads/2016/06/beatles.jpg" alt="Beatles">
-                <div class="card-divider">Beatles</div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="tabs-panel" id="panel-domingo">
-
-          <div class="row">
-
-            <div class="small-12 medium-6 columns">
-              <div class="card">
-                <img src="https://bulk2.destructoid.com/ul/150736-queen.jpg" alt="Queen">
-                <div class="card-divider">Queen</div>
-              </div>
-            </div>
-
-            <div class="small-12 medium-6 columns">
-              <div class="card">
-                <img src="https://bulk2.destructoid.com/ul/150736-queen.jpg" alt="Queen">
-                <div class="card-divider">Queen</div>
-              </div>
-            </div>
-
-            <div class="small-12 medium-6 columns">
-              <div class="card">
-                <img src="https://bulk2.destructoid.com/ul/150736-queen.jpg" alt="Queen">
-                <div class="card-divider">Queen</div>
-              </div>
-            </div>
-
-            <div class="small-12 medium-6 columns">
-              <div class="card">
-                <img src="https://bulk2.destructoid.com/ul/150736-queen.jpg" alt="Queen">
-                <div class="card-divider">Queen</div>
-              </div>
-            </div>
-
-          </div>
+          <!-- Info -->
+          <section id="info-container" data-magellan-target="info-container">
+            <h3 class="text-center">Información</h3>
+            <div class="info-map" data-interchange="[assets/map.small.html, small], [assets/map.html, medium]"></div>
+          </section>
+          <!-- /info -->
         </div>
       </div>
-    </section>
-    <!-- /Lineup -->
+    </div>
 
-    <!-- Pricing Table -->
-    <section id="pricing-container" data-magellan-target="pricing-container">
-      <h3 class="text-center">Comprar Boletos</h3>
-
-      <div class="row">
-
-        <div class="small-6 small-offset-3 columns">
-          <ul class="pricing-table">
-            <li class="title">Platino</li>
-            <li class="price">$120</li>
-            <li class="description">Acceso viernes, sábado y domingo</li>
-            <li>2 bebidas por cada día</li>
-            <li>Parqueadero incluido todos los días</li>
-            <li>Participa de un sorteo para acceder al backstage</li>
-            <li><a class="button" href="#">Comprar platino</a></li>
-          </ul>          
-        </div>
-
-      </div>
-
-      <div class="row" data-equalizer data-equalize-on="small">
-
-        <div class="small-5 small-offset-1 columns">
-          <ul class="pricing-table">
-            <li class="title">Gold</li>
-            <li class="price">$90</li>
-            <li class="description">Acceso viernes, sábado y domingo</li>
-            <li data-equalizer-watch>Podras comprar una bebida para cada día</li>
-            <li>-</li>
-            <li>-</li>
-            <li><a class="button" href="#">Comprar Gold</a></li>
-          </ul>
-        </div>
-
-        <div class="small-5 columns">
-          <ul class="pricing-table">
-            <li class="title">Silver</li>
-            <li class="price">$65</li>
-            <li class="description">Acceso viernes, sábado y domingo</li>
-            <li data-equalizer-watch >-</li>
-            <li>-</li>
-            <li>-</li>
-            <li><a class="button" href="#">Comprar Silver</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-    </section>
-    <!-- /Pricing Table> -->
-
-    <!-- Suscribete -->
-    <section id="suscribete-container" data-magellan-target="suscribete-container">
-      <h3 class="text-center">Suscríbete</h3>
-      <h4 class="text-center"><small>Y recive las últimas novedades del concierto</small></h4>
-      <!-- el atributo data-abide es parte de un plugin de foundation para validar y mostrar errores de un formulario llamado bide -->
-      <form action="" method="" novalidate data-abide>
-        <!-- al utilizar el atributo data-abide-error le dice a foundation que el elemento se debe de mostrar al aocurrir un error de validacion -->
-        <div data-abide-error  style="display: none;" class="row columns small-12 medium-6 text-center error-container">
-          <p>
-            <i class="fi-alert"></i>Ingresó un correo electrónico no valido
-          </p>
-        </div>
-        <div class="row columns small-12 medium-6">
-          <div class="input-group">
-            <span class="input-group-label"><i class="fi-mail"></i></span>
-            <input type="email" name="email" required placeholder="to@correo.com" class="input-group-field">
-            <div class="input-group-button">
-              <input type="submit" value="Suscríbete" class="button">
-            </div>
-          </div>
-        </div>
-      </form>
-    </section>
-    <!-- /Suscribete -->
-
-    <!-- Info -->
-    <section id="info-container" data-magellan-target="info-container">
-      <h3 class="text-center">Información</h3>
-      <div class="info-map" data-interchange="[assets/map.small.html, small], [assets/map.html, medium]"></div>
-    </section>
-    <!-- /info -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
