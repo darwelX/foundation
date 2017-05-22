@@ -15,16 +15,19 @@
     <div class="off-canvas-wrapper">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+          <button class="close-button" aria-level="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>            
           <nav data-magellan>
-            <ul class="menu vertical">
+            <ul class="menu vertical" data-drilldown>
               <li><a href="#pricing-container">Tickets</a></li>
               <li>
                 <a href="#lineup-container">Lineup</a>
-                <!--<ul id="menu-subcontainer" class="menu">
+                <ul class="vertical menu">
                   <li><a data-toggle-dia="panel-viernes"href="#lineup-container">Viernes</a></li>
                   <li><a data-toggle-dia="panel-sabado"href="#lineup-container">Sábado</a></li>
                   <li><a data-toggle-dia="panel-domingo"href="#lineup-container">Domingo</a></li>
-                </ul>-->
+                </ul>
               </li>
               <li><a href="#info-container">Info</a></li>
               <li><a href="#suscribete-container">Suscribete</a></li>              
@@ -95,7 +98,7 @@
           <!-- Call to Action: es un botón o enlace situado en nuestro site que busca atraer clientes potenciales y convertirles en clientes finales, normalmente a través de un formulario en una página de destino o landing page. -->
           <section id="tickets-action">
             <!-- la clase large le añade padding al contenido de la etiqueta que lo usa -->
-            <div class="callout large text-center">
+            <div class="callout large text-center" data-magellan>
               <a class="button large hollow" href="#pricing-container">Comprar Boletos</a>
             </div>
           </section>
