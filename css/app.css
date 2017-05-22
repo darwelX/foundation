@@ -168,3 +168,18 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
     color: white;
     font-family: "Bree Serif", serif;
 }
+
+#offCanvas .is-drilldown-submenu-parent > a::after {
+    border-color: transparent transparent transparent white
+}
+
+#offCanvas .js-drilldown-back > a::before {
+    border-color: transparent white transparent transparent
+}
+
+#offCanvas button {
+    z-index: 100;
+}
+#offCanvas button span {
+    color: white;
+}
