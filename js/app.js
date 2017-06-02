@@ -60,3 +60,10 @@ $tabDomingo.click(function(eve){
 });
 
 animateViernes();
+
+
+const $menu =$('#menu');
+
+$menu.click(function(eve){
+    MotionUI.animateIn($('#offCanvas'), 'scale-in-up slow');
+});
