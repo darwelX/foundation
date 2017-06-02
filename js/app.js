@@ -44,48 +44,18 @@ function animateDomingo(){
     MotionUI.animateIn($("#queen-cuatro"), $animation4);
 }
 
-const $tabViernes = $('#viernes');
+const $tabViernes = $('#viernes, #viernes-sticky, #viernes-canvas');
 $tabViernes.click(function(eve){
     animateViernes();
 });
 
-const $tabSabado = $('#sabado');
+const $tabSabado = $('#sabado, #sabado-sticky, #sabado-canvas');
 $tabSabado.click(function(eve){
     animateSabado();
 });
 
-const $tabDomingo = $('#domingo');
+const $tabDomingo = $('#domingo, #domingo-sticky, #domingo-canvas');
 $tabDomingo.click(function(eve){
-    animateDomingo();
-});
-
-const $tabViernesSticky = $('#viernes-sticky');
-$tabViernesSticky.click(function(eve){
-    animateViernes();
-});
-
-const $tabSabadoSticky = $('#sabado-sticky');
-$tabSabadoSticky.click(function(eve){
-    animateSabado();
-});
-
-const $tabDomingoSticky = $('#domingo-sticky');
-$tabDomingoSticky.click(function(eve){
-    animateDomingo();
-});
-
-const $tabViernesCanvas = $('#viernes-canvas');
-$tabViernesCanvas.click(function(eve){
-    animateViernes();
-});
-
-const $tabSabadoCanvas = $('#sabado-canvas');
-$tabSabadoCanvas.click(function(eve){
-    animateSabado();
-});
-
-const $tabDomingoCanvas = $('#domingo-canvas');
-$tabDomingoCanvas.click(function(eve){
     animateDomingo();
 });
 
